@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oooi Administrator, oo, LIC=Z3C6R-KAT23-KU24L-0IC7I-NX0R5-R2UT8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.12
+Assembler:       Armasm.exe V6.12
+Linker/Locator:  ArmLink.exe V6.12
+Library Manager: ArmAr.exe V6.12
+Hex Converter:   FromElf.exe V6.12
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+D:\Documents\Desktop\work_tjl\4187\software\code\MDK-ARM\STM32G031G8Ux.uvprojx
+Project File Date:  06/09/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.12', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Project'
+../User/user_test.c(115): warning: passing 'uint32_t *' (aka 'unsigned int *') to parameter of type 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        HT7017_GetPower_P(&g_tHT7017[HT7017_INDEX_01], &User_Meter.RMS_P);
+                                                       ^~~~~~~~~~~~~~~~~
+../BSP\bsp_ht7017.h(105): note: passing argument to parameter 'dc' here
+uint8_t HT7017_GetPower_P(ht7017_handle_t *handle, int32_t *dc);
+                                                            ^
+1 warning generated.
+compiling user_test.c...
+linking...
+Program Size: Code=34228 RO-data=5840 RW-data=240 ZI-data=5352  
+FromELF: creating hex file...
+".\Project\STM32G031G8Ux.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G0xx_DFP.1.4.0.pack
+                Keil.STM32G0xx_DFP.1.4.0
+                STMicroelectronics STM32G0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
